@@ -1,0 +1,10 @@
+.option {
+    border: 2px solid lightcyan;
+    padding: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
