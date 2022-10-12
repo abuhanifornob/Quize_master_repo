@@ -4,3 +4,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+@media screen and (max-width: 760px) {
+    .topic-details {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -8,6 +8,8 @@ import Blog from './components/Blog/Blog';
 import Quiz from './components/Quiz/Quiz';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Statistical from './components/Statistical/Statistical';
+import OrurOfFour from './components/FourOfFour/FourOfFour';
+import FourOfFour from './components/FourOfFour/FourOfFour';
 
 function App() {
   const router=createBrowserRouter([
@@ -39,7 +41,11 @@ function App() {
       }
     ],
     element:<Main></Main>
-  }
+  },
+  {
+    path:"/*",
+    element:<FourOfFour></FourOfFour>
+    }
 ])
   return (
     <div className="App">

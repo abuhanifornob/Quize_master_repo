@@ -19,8 +19,8 @@ const Home = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className='slide-title'>Live Virsual System</h3>
+            {/* <p className='slide-content1'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -31,8 +31,8 @@ const Home = () => {
           />
   
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 className='slide-title'>Online Quiz Mark System</h3>
+            {/* <p className='slide-content2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -44,10 +44,10 @@ const Home = () => {
           />
   
           <Carousel.Caption>
-            <h3 className='slide-title'>Third slide label</h3>
-            <p className='slide-content'>
+            <h3 className='slide-title'>Live Virsual Event </h3>
+            {/* <p className='slide-content'>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            </p> */}
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
