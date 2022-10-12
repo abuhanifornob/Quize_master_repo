@@ -18,6 +18,7 @@ const QuestionsDetails = ({questionPaper,number}) => {
           <div className='questionNameContainer'>
             <div className='questionName'><h3>Quis {number+1}: {question}</h3></div>
             <button className='correctAnsButton'>
+          
             <div className='correatAnsIcon'>
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
