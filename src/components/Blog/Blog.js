@@ -10,6 +10,7 @@ const Blog = () => {
     const[open2,setOpen2]=useState(false);
     return (
         <div className='blog'>
+          <h3>Quiz Master Blog  !!! </h3>
       <Button
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
@@ -35,7 +36,7 @@ const Blog = () => {
         What is React Context API and How it works?
       </Button>
       <Collapse in={open1}>
-        <div id="example-collapse-text1">
+        <div id="example-collapse-text1" className='answer'>
             <h3>What is Context API?</h3>
        
             The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
@@ -49,13 +50,23 @@ const Blog = () => {
         aria-controls="example-collapse-text2"
         aria-expanded={open2}
       >
-        click2
+        React useRef() hool .......
       </Button>
       <Collapse in={open2}>
-        <div id="example-collapse-text2">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
+        <div id="example-collapse-text2" className='answer'>
+        useRef() hook creates references.
+<br />
+Calling const reference = useRef(initialValue) with the initial value returns a special object named reference. The reference object has a property current: you can use this property to read the reference value reference.current, or update reference.current = newValue.
+<br />
+Between the component re-renderings, the value of the reference is persistent.
+<br />
+Updating a reference, contrary to updating state, doesn't trigger component re-rendering.
+<br />
+References can also access DOM elements. Assign the reference to ref attribute of the element you'd like to access: 
+<br />
+Want to improve you React knowledge further? Follow A Simple Explanation of React.useEffect().
+<br />
+Challenge: write a custom hook useEffectSkipFirstRender() that works as useEffect(), only that it doesn't invoke the callback after initial rendering (Hint: you need to use useRef()). Share your solution in a comment below!
         </div>
       </Collapse>
       </div>

@@ -3,15 +3,19 @@
     padding: 20px;
     background-color: rgb(166, 241, 241);
     border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .btn {
-    width: 100%;
+    width: 90%;
     border-radius: 0;
-    margin-bottom: 20px;
+    margin: 10px 0;
+    padding: 10px;
 }
 
 .blog {
     width: 80%;
     margin: 100px auto;
+    background-color: slategrey;
 }
