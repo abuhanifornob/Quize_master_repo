@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Result from '../Result/Result';
 
 import "./AnswerSheet.css"
 
-const AnswerSheet = ({option}) => {
-    console.log(option)
+const AnswerSheet = ({options,correctAnswer}) => {
+    console.log(options);
+    const [chekAns,setCheckAns]=useState(false);
+    const checkHandeler=async(selectOption)=>{
+        if(selectOption===correctAnswer){
+            setCheckAns(true)
+        }
+        else{
+            setCheckAns(false)
+        }
+    }
+    
+    console.log(chekAns);
     return (
-       
-            <div className='option'>
-        <input type="checkbox" name="item" id="item" />
-        <label htmlFor="item">{option}</label>
-    </div>
-
+       <div>
+        {
+            options.map((option,index)=><Result
+             key={index}
+             option={option}
+             checkHandeler={checkHandeler}
+             result={chekAns}
+            ></Result>)
+        }
+       </div>
        
     );
 };
