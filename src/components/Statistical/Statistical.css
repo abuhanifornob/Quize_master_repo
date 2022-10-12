@@ -1,0 +1,12 @@
+.statisticlChart {
+    margin-top: 100px;
+    background-color: rgb(132, 238, 238);
+    width: 700px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.statisticalSummary {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
