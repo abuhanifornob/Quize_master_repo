@@ -1,0 +1,17 @@
+.answer {
+    text-align: start;
+    padding: 20px;
+    background-color: rgb(166, 241, 241);
+    border-radius: 20px;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.blog {
+    width: 80%;
+    margin: 100px auto;
+}
